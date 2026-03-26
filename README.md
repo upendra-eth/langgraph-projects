@@ -1,28 +1,41 @@
-Langgraph Projects
+LangGraph Projects
 
-Purpose
-This repository contains small learning projects using langgraph and llm
-It includes notebooks and will grow with more examples over time
+Overview
+This repository contains learning projects and experiments built with LangGraph and large language models.
+Most work is captured in Jupyter notebooks so it is easy to follow and rerun.
 
-What is inside
-Notebooks for setup and examples
-Langgraph graphs and simple workflows
-Prompt chaining experiments
+Repository contents
+- Notebooks for setup and examples
+- Simple LangGraph workflows and state based graphs
+- Prompt chaining and related experiments
 
-Getting started
-Install python
-Create a virtual environment
-Install required packages
-Create a env file with your api keys
-Open the notebooks and run the cells
+Quick start
+1 Install Python
+2 Create and activate a virtual environment
+3 Install packages
+4 Create an env file with your API keys
+5 Open the notebooks and run the cells
 
-Important notes
-Do not commit secrets
-Do not commit virtual environment folders
-Use the gitignore included in this repo
+Example commands
+python3 -m venv myenv
+source myenv bin activate
+python -m pip install -U pip
+python -m pip install langgraph langchain python-dotenv
 
-Suggested structure for new projects
-Create one folder per project
-Keep one notebook per lesson
-Add a short description at the top of each notebook
+Environment variables
+Create a file named env in the repository root and add your keys.
+Do not commit this file.
+
+Git and security
+- Never commit secrets like API keys
+- Never commit virtual environment folders
+- The gitignore in this repo is configured to help with that
+
+Suggested structure for new work
+- Create one folder per project or topic
+- Keep one notebook per lesson or experiment
+- Add a short description and goal at the top of each notebook
+
+Notes
+If a notebook fails due to missing credentials check your env file and confirm the keys are available in the environment.
 
